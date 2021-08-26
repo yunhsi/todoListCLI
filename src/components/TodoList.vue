@@ -26,7 +26,7 @@ export default {
     deleteTodo(todo, index) {
       let result = confirm(`確定要刪 "${todo.content}"?`);
       if (result) {
-        this.todos.splice(index, 1);
+        this.$store.commit("deleteTodo", index);
       }
     },
   },

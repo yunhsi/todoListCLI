@@ -35,6 +35,9 @@ export default createStore({
     clearNewTodo(state) {
       state.newTodo = "";
     },
+    deleteTodo(state, index) {
+      state.todos.splice(index, 1);
+    },
   },
   actions: {},
   modules: {},
