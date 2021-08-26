@@ -38,6 +38,9 @@ export default createStore({
     deleteTodo(state, index) {
       state.todos.splice(index, 1);
     },
+    cancelUpdate(state, data) {
+      state.todos[data.index].content = data.beforeUpdate;
+    },
   },
   actions: {},
   modules: {},

@@ -12,7 +12,6 @@
 <script>
 export default {
   name: "createTodoInput",
-  props: {},
   methods: {
     createTodo() {
       this.$store.commit("createTodo");
