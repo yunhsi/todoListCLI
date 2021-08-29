@@ -8,17 +8,17 @@ export default createStore({
     todos: [
       {
         id: 1,
-        content: "一",
+        content: "寫作業",
         complete: false,
       },
       {
         id: 2,
-        content: "二",
+        content: "做家事",
         complete: true,
       },
       {
         id: 3,
-        content: "三",
+        content: "陪貓咪",
         complete: false,
       },
     ],
@@ -43,5 +43,4 @@ export default createStore({
     },
   },
   actions: {},
-  modules: {},
 });
